@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/starwarsplanets/static/css/main.638b90c3.chunk.css",
+    "main.js": "/starwarsplanets/static/js/main.9428768c.chunk.js",
+    "main.js.map": "/starwarsplanets/static/js/main.9428768c.chunk.js.map",
+    "runtime-main.js": "/starwarsplanets/static/js/runtime-main.507166b7.js",
+    "runtime-main.js.map": "/starwarsplanets/static/js/runtime-main.507166b7.js.map",
+    "static/js/2.b0aa6226.chunk.js": "/starwarsplanets/static/js/2.b0aa6226.chunk.js",
+    "static/js/2.b0aa6226.chunk.js.map": "/starwarsplanets/static/js/2.b0aa6226.chunk.js.map",
+    "index.html": "/starwarsplanets/index.html",
+    "static/css/main.638b90c3.chunk.css.map": "/starwarsplanets/static/css/main.638b90c3.chunk.css.map",
+    "static/js/2.b0aa6226.chunk.js.LICENSE.txt": "/starwarsplanets/static/js/2.b0aa6226.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.507166b7.js",
+    "static/js/2.b0aa6226.chunk.js",
+    "static/css/main.638b90c3.chunk.css",
+    "static/js/main.9428768c.chunk.js"
+  ]
+}
