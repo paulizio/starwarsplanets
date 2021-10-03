@@ -1,7 +1,13 @@
 /* eslint-disable react/prop-types */
-import React from 'react'
-import '../App.css'
-const Planetsfilter = ({ planets, residents }) => {
+import React from 'react';
+import '../App.css';
+import { Resident, Planet } from '../types';
+
+interface PlanetsFilterProps {
+  planets:Planet[];
+  residents: Resident[]
+}
+const Planetsfilter = ({planets, residents }: PlanetsFilterProps):JSX.Element => {
   /*
   Only show planets that have residents,
   sort planets by diameter smallest to largest
@@ -9,8 +15,8 @@ const Planetsfilter = ({ planets, residents }) => {
   */
   const planetsWithResidents = planets
     .filter(p => p.residents.length !== 0)
-    .sort((a, b) => parseInt(isNaN(a.diameter) ? 0 : a.diameter) - parseInt(isNaN(b.diameter) ? 0 : b.diameter))
-    .map(planet => ({ ...planet, residents: residents.filter(res => res.homeworld === planet.url).map(res => res.name) }))
+    .sort((a, b) => parseInt(isNaN(+a.diameter) ? '0' : a.diameter) - parseInt(isNaN(+b.diameter) ? '0' : b.diameter))
+    .map(planet => ({ ...planet, residents: residents.filter(res => res.homeworld === planet.url).map(res => res.name) }));
   return (
     <div className='tableFixHead'>
       <table>
@@ -38,6 +44,6 @@ const Planetsfilter = ({ planets, residents }) => {
         </tbody>
       </table>
     </div>
-  )
-}
-export default Planetsfilter
+  );
+};
+export default Planetsfilter;
