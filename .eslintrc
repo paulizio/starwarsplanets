@@ -11,7 +11,9 @@
     "es6": true
   },
   "rules": {
-    "@typescript-eslint/semi": ["error"],
+    "semi": ["error", "never"],
+    "@typescript-eslint/semi": "off",
+    "no-unexpected-multiline": "error",
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/explicit-function-return-type": 0,
     "@typescript-eslint/no-unused-vars": [

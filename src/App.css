@@ -1,32 +1,31 @@
-
-
-table  {
-  border-collapse: separate; 
+table {
+  border-collapse: separate;
   width: 100%;
   border: 2px solid rgb(229, 177, 58);
-  }
+}
 
-th, td {
+th,
+td {
   padding: 8px 16px;
   border: 1px solid rgb(229, 177, 58);
-  }
+}
 
- tbody {
-  margin:auto;
-  }
-  
-  .center {
+tbody {
+  margin: auto;
+}
+
+.center {
   margin: auto;
   text-align: center;
-  }
-  .tableFixHead{ 
+}
+.tableFixHead {
   overflow-y: auto;
-  height: 20em; 
+  height: 20em;
 }
 .tableFixHead thead th {
   position: sticky;
   top: 0;
   border: 1px solid rgb(229, 177, 58);
   font-size: 1.3em;
-  background:black;
+  background: black;
 }
